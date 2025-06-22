@@ -1,0 +1,188 @@
+:root {
+  --primary-color: #57b4ba;
+  --secondary-color: #fdfbee;
+  --third-color: #015551;
+  --wrapper-color: #fe4f2d;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: var(--primary-color);
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.wrapper-header {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.title {
+  color: var(--secondary-color);
+  font-size: 24px;
+  font-weight: bold;
+  margin-right: auto;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+li {
+  list-style-type: none;
+}
+
+.wrapper-list {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Input Date */
+#searchByDate {
+  padding: 8px 12px;
+  border: 1px solid var(--third-color);
+  border-radius: 5px;
+  font-size: 14px;
+  background-color: var(--secondary-color);
+  color: var(--third-color);
+}
+
+/* Tombol Search */
+.btn-search {
+  background-color: var(--wrapper-color);
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+/* Hover Effect */
+.btn-search:hover {
+  background-color: #d8431f;
+}
+
+/* SECTION WRAPPER */
+.notes-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* FORM STYLING */
+.form {
+  background-color: var(--secondary-color);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 450px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+}
+
+/* FORM GROUP */
+.form-group {
+  display: grid;
+  gap: 5px;
+}
+
+.form-group label {
+  font-size: 14px;
+  font-weight: bold;
+  color: var(--third-color);
+}
+
+/* INPUT STYLING */
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--third-color);
+  border-radius: 5px;
+  font-size: 14px;
+  background-color: white;
+  color: var(--third-color);
+  outline: none;
+}
+
+/* BUTTON WRAPPER */
+.form-action {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* BUTTON STYLING */
+#addNotes {
+  background-color: var(--wrapper-color);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s;
+  -webkit-transition: background 0.3s;
+  -moz-transition: background 0.3s;
+  -ms-transition: background 0.3s;
+  -o-transition: background 0.3s;
+}
+
+/* HOVER EFFECT */
+#addNotes:hover {
+  background-color: #d8431f;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 600px) {
+  .form {
+    width: 100%;
+    max-width: 100%;
+    padding: 15px;
+  }
+
+  .form-action {
+    justify-content: center;
+  }
+
+  #addNotes {
+    width: 100%;
+    text-align: cente;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .wrapper-header {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  nav ul {
+    justify-content: center;
+  }
+}
